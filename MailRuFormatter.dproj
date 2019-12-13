@@ -90,10 +90,10 @@
         <VerInfo_Locale>1049</VerInfo_Locale>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <Icon_MainIcon>icon.ico</Icon_MainIcon>
-        <VerInfo_Keys>CompanyName=HEX0x29A;FileDescription=MailRuFormatter;FileVersion=1.5.0.103;InternalName=MailRuFormatter;LegalCopyright=HEX0x29A;LegalTrademarks=HEX0x29A;OriginalFilename=MailRuFormatter.exe;ProductName=MailRuFormatter;ProductVersion=1.5.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=HEX0x29A;FileDescription=MailRuFormatter;FileVersion=1.5.0.104;InternalName=MailRuFormatter;LegalCopyright=HEX0x29A;LegalTrademarks=HEX0x29A;OriginalFilename=MailRuFormatter.exe;ProductName=MailRuFormatter;ProductVersion=1.5.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>103</VerInfo_Build>
+        <VerInfo_Build>104</VerInfo_Build>
         <AppDPIAwarenessMode>system</AppDPIAwarenessMode>
     </PropertyGroup>
     <ItemGroup>

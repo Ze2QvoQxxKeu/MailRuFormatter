@@ -119,7 +119,7 @@ const
 var
   i: Integer;
   m: TMatch;
-  Space, tmp: string;
+  Space, tmp, x: string;
 begin
   Space := IfThen(Comment, ' ', '&nbsp;&nbsp;');
   Result := Text;
@@ -160,9 +160,11 @@ begin
       if m.Success then
         if m.Index = 1 then
         begin
+          x := StringReplace(m.Value, '%D0%81', '%D0%95', [rfReplaceAll]);
+          x := StringReplace(x, '%D1%91', '%D0%B5', [rfReplaceAll]);
           Delete(Result, i, m.Length);
           tmp := Format('<a rel="nofollow" href="%s" target="_blank">%s</a>',
-            [AntiAntiSpamUrl + m.Value, m.Value]);
+            [AntiAntiSpamUrl + x, m.Value]);
           Insert(tmp, Result, i);
           Inc(i, Succ(Length(tmp)));
           Continue;
