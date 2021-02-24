@@ -99,7 +99,7 @@ begin
         for j := 1 to m.Groups[1].Length do
         begin
           str := str + m.Groups[1].Value[j];
-          if not CharInSet(m.Groups[1].Value[j], [#13, #10, #9, ' ']) then
+          if not #13#10#9' '.Contains(m.Groups[1].Value[j]) then
             str := str + BBChr[x];
         end;
         Insert(str, Text, i);
@@ -121,7 +121,7 @@ var
   m: TMatch;
   Space, tmp, x: string;
 begin
-  Space := IfThen(Comment, ' ', '&nbsp;&nbsp;');
+  Space := IfThen(Comment, '  ', '    '{ALT+255});
   Result := Text;
   while Pos(#32#13, Result) <> 0 do
     Result := StringReplace(Result, #32#13, #13, [rfReplaceAll]);
@@ -162,6 +162,8 @@ begin
         begin
           x := StringReplace(m.Value, '%D0%81', '%D0%95', [rfReplaceAll]);
           x := StringReplace(x, '%D1%91', '%D0%B5', [rfReplaceAll]);
+          x := StringReplace(x, 'Ё', 'Е', [rfReplaceAll]);
+          x := StringReplace(x, 'ё', 'е', [rfReplaceAll]);
           Delete(Result, i, m.Length);
           tmp := Format('<a rel="nofollow" href="%s" target="_blank">%s</a>',
             [AntiAntiSpamUrl + x, m.Value]);
@@ -381,7 +383,7 @@ begin
         i := 1;
         while i <= t.Length do
         begin
-          if not CharInSet(t[i], [#13, #10, #9, ' ']) then
+          if not #13#10#9' '.Contains(t[i]) then
           begin
             Insert(BBChr[BBIndex], t, Succ(i));
             Inc(i, 2);

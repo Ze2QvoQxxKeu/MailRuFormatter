@@ -3,7 +3,7 @@ object fMain: TfMain
   Top = 0
   AlphaBlend = True
   AlphaBlendValue = 230
-  Caption = 'MailRuFormatter by HEX0x29A'
+  Caption = 'MailRuFormatter'
   ClientHeight = 462
   ClientWidth = 527
   Color = clBtnFace
@@ -79,6 +79,7 @@ object fMain: TfMain
     Text = 'https://4pda.ru/pages/go/?u='
     Items.Strings = (
       'https://4pda.ru/pages/go/?u='
+      'http://www.durbetsel.ru/go.php?site='
       'https://anonym.es/?'
       'https://anonymz.com/?'
       

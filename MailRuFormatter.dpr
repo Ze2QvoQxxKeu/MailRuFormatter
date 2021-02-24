@@ -3,9 +3,9 @@ program MailRuFormatter;
 uses
   Winapi.Windows,
   Vcl.Forms,
-  uMain in 'uMain.pas' {fMain},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  uMain in 'uMain.pas' {fMain};
 
 {$R *.res}
 
@@ -33,5 +33,3 @@ begin
   Application.CreateForm(TfMain, fMain);
   Application.Run;
 end.
-
-
