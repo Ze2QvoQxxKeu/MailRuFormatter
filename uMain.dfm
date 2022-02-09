@@ -12,7 +12,6 @@ object fMain: TfMain
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poDesigned
   OnCreate = FormCreate
   OnDestroy = FormDestroy
@@ -76,7 +75,7 @@ object fMain: TfMain
     Height = 21
     Align = alTop
     TabOrder = 4
-    Text = 'https://4pda.ru/pages/go/?u='
+    Text = 'https://4pda.to/pages/go/?u='
     Items.Strings = (
       'https://4pda.ru/pages/go/?u='
       'http://www.durbetsel.ru/go.php?site='
@@ -136,7 +135,7 @@ object fMain: TfMain
     Align = alTop
     Alignment = taRightJustify
     Caption = 
-      '<a href="https://github.com/Ze2QvoQxxKeu/MailRuFormatter">'#1055#1086#1089#1077#1090#1080 +
+      '<a href="https://ze2qvoqxxkeu.github.io/MailRuFormatter/">'#1055#1086#1089#1077#1090#1080 +
       #1090#1100' '#1089#1072#1081#1090'?</a>'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite

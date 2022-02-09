@@ -9,4 +9,4 @@
 * Обход спам-фильтра через редиректы со сторонних сайтов
 * Поддержка BBCode
 
-## [Скачать](https://github.com/Ze2QvoQxxKeu/MailRuFormatter/releases/download/1.6.0.138/MailRuFormatter.exe "Скачать последнюю версию")
+## [Скачать](https://github.com/Ze2QvoQxxKeu/MailRuFormatter/releases/download/1.6.0.139/MailRuFormatter.exe "Скачать последнюю версию")
