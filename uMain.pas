@@ -121,7 +121,7 @@ var
   m: TMatch;
   Space, tmp, x: string;
 begin
-  Space := IfThen(Comment, '  ', '    '{ALT+255});
+  Space := IfThen(Comment, '  ', '    '{ALT+255}); {new 4 test &#160;}
   Result := Text;
   while Pos(#32#13, Result) <> 0 do
     Result := StringReplace(Result, #32#13, #13, [rfReplaceAll]);

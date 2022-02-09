@@ -74,10 +74,11 @@ object fMain: TfMain
     Width = 527
     Height = 21
     Align = alTop
+    ItemIndex = 0
     TabOrder = 4
     Text = 'https://4pda.to/pages/go/?u='
     Items.Strings = (
-      'https://4pda.ru/pages/go/?u='
+      'https://4pda.to/pages/go/?u='
       'http://www.durbetsel.ru/go.php?site='
       'https://anonym.es/?'
       'https://anonymz.com/?'
